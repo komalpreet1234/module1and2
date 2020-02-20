@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>To Do List</title>
+    </head>
+    <body>
+        <div style="background-color: grey; color: black; width: 100%; margin: auto; height: 100%; text-align: center; padding: 1px;">
+            <h2>To Do List</h2>
+        </div>
+
+        <div id="addItem" style="border: 1px solid black; width: 100%; margin: auto;">
+			<br/>
+            <input type="text" id="task" placeholder="Task"><br/> 
+            <br/>
+			<input type="radio" name="status" id="donecheck" value="done" >Done
+			<input type="radio" name="status" id="notdonecheck" value="notdone" checked="checked"	>Not-Done
+			<br/>
+			<br/>
+			<button type="submit" id="submitButton">Add Task</button>
+			<br/>
+			<br/>
+			
+        </div>
+		<div style="background-color: green; color: white; width: 50%; margin: auto; height: auto; float: left">
+			
+			<h3>Completed Tasks</h3>
+			<div id="completedList">
+			</div>
+		</div>
+		
+		<div style="background-color: red; color: white; width: 50%; margin: auto; height: auto; float: right">
+		
+			<h3>Pending Tasks</h3>
+			<div id="pendingList">
+			</div>
+		</div>
+        <script src="script.js"></script>
+    </body>
+</html>
